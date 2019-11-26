@@ -1,4 +1,5 @@
 #include "definitions.h"
+#include <Arduino.h> // to convert file into cpp
 // ***************************************************************************
 // Load library "ticker" for blinking status led, mqtt send and save state
 // ***************************************************************************
