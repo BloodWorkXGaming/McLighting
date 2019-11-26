@@ -1,5 +1,6 @@
-#include "definitions.h"
 #include <Arduino.h> // to convert file into cpp
+#include "definitions.h"
+
 // ***************************************************************************
 // Load library "ticker" for blinking status led, mqtt send and save state
 // ***************************************************************************
@@ -82,6 +83,9 @@
 #include "html_material_icons.h"
 #endif
 
+#if defined(ENABLE_MQTT)
+  void initMqtt();
+#endif
 
 // ***************************************************************************
 // Instanciate HTTP(80) / WebSockets(81) Server
